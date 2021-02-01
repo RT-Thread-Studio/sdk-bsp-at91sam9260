@@ -90,7 +90,7 @@ template_projects:
     - libcpu/arm
     - libcpu/Kconfig
     - libcpu/SConscript
-    - example
+    - examples
     - src
     - tools
     - Kconfig
