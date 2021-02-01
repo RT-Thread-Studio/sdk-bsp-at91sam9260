@@ -1,0 +1,107 @@
+board:
+  buy_url_cn: https://www.element14.com/community/docs/DOC-47033/l/evaluation-board-for-at91sam9260
+  buy_url_global: https://www.element14.com/community/docs/DOC-47033/l/evaluation-board-for-at91sam9260
+  debug_interface: SWD
+  debugger: J-Link
+  description_en: The Atmel's AT91SAM9260-EK evaluation kit enables the evaluation
+    of and code development for applications running on 32-bit ARM Thumb based AT91SAM9260
+    device. The board supports the AT91SAM9260 in an LFBGA217 package as well as in
+    a PQFP208 package.
+  description_zh: Atmel 的 AT91SAM9260-EK 评估套件可对在基于32位ARM Thumb的 AT91SAM9260 器件上运行的应用程序进行评估和代码开发。该开发板以
+    LFBGA217 封装和PQFP208 封装支持 AT91SAM9260。
+  emulator_machine: ''
+  large_image: documents/images/at91sam9260_large.png
+  name: AT91SAM9260-MICROCHIP-EVA
+  price_cn: 601.84 CNY
+  price_global: 3887.88 USD
+  sale_contact_cn: https://www.microchip.com/wwwproducts/en/AT91SAM9260
+  sale_contact_global: https://www.microchip.com/wwwproducts/en/AT91SAM9260
+  small_image: documents/images/at91sam9260_small.png
+  vendor: MicroChip
+  version: 1.0.0
+chip:
+  chip_name: AT91SAM9260
+  clock_source: HSE
+  device_vendor: MicroChip
+  family_name: AT91
+  rx_name: PA10
+  series_name: AT91
+  source_freq: '8000000'
+  sub_series_name: AT91SAM9260
+  target_freq: '240000000'
+  tx_name: PA9
+  uart_name: UART1
+docs:
+- category: sheet
+  file: documents/Atmel-6221-32-bit-ARM926EJ-S-Embedded-Microprocessor-SAM9260_Datasheet.pdf
+  title: Microprocessor-SAM9260_Datasheet
+example_projects: []
+features:
+- ARM926 ARM Thumb Processor running up to 210 MHz
+- 8-Kbyte Data Cache, 8-Kbyte Instruction Cache
+- Memory Management Unit
+- 8 Kbytes of SRAM, single-cycle access
+- 32 Kbytes of ROM embedding standard bootstrap
+- 32-bit External Bus Interface (EBI) supporting SDRAM, LPSDRAM, Static Memory, Burst
+  Flash, Glueless Connection to CompactFlash and NAND Flash/SmartMedia with 1-bit
+  ECC
+features_zh:
+- ARM926 ARM Thumb Processor running up to 210 MHz
+- 8-Kbyte Data Cache, 8-Kbyte Instruction Cache
+- Memory Management Unit
+- 8 Kbytes of SRAM, single-cycle access
+- 32 Kbytes of ROM embedding standard bootstrap
+- 32-bit External Bus Interface (EBI) supporting SDRAM, LPSDRAM, Static Memory, Burst
+  Flash, Glueless Connection to CompactFlash and NAND Flash/SmartMedia with 1-bit
+  ECC
+pkg_type: Board_Support_Packages
+pkg_vendor: RealThread
+pkg_version: 1.0.0
+template_projects:
+- builtin_files:
+  - files_and_folders:
+    - .config
+    - .cproject
+    - .project
+    - .settings
+    - applications
+    - cconfig.h
+    - debug_scripts
+    - drivers
+    - Kconfig
+    - link_scripts
+    - makefile.targets
+    - platform
+    - rtconfig.h
+    - rtconfig.py
+    - rtconfig_preinc.h
+    - SConscript
+    - SConstruct
+    - template.ewp
+    - template.eww
+    - template.uvopt
+    - template.uvproj
+    source_path_offset: project_0
+    target_path_offset: ''
+  external_files:
+  - files_and_folders:
+    - components
+    - include
+    - libcpu/arm
+    - libcpu/Kconfig
+    - libcpu/SConscript
+    - example
+    - src
+    - tools
+    - Kconfig
+    - LICENSE
+    package_name: RT-Thread
+    package_type: RT-Thread_Source_Code
+    package_vendor: ''
+    package_version: latest
+    source_path_offset: rt-thread
+    target_path_offset: rt-thread
+  project_description: at91sam9260
+  project_name: at91sam9260
+  project_type: rt-thread|@full|@latest
+yaml_version: 3
